@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "name": "Charmander",
+        "type": "fire",
+        "evolution": "basic",
+        "abilities": {
+            "ember": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Squirtle",
+        "type": "water",
+        "evolution": "basic",
+        "abilities": {
+            "water_gun": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "Bulbasaur",
+        "type": "grass",
+        "evolution": "basic",
+        "abilities": {
+            "vine_whip": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 4,
+        "name": "Pikachu",
+        "type": "electric",
+        "evolution": "basic",
+        "abilities": {
+            "thunder_shock": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 5,
+        "name": "Eevee",
+        "type": "normal",
+        "evolution": "basic",
+        "abilities": {
+            "quick_attack": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 6,
+        "name": "Vulpix",
+        "type": "fire",
+        "evolution": "basic",
+        "abilities": {
+            "flame_tail": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 7,
+        "name": "Jigglypuff",
+        "type": "fairy",
+        "evolution": "basic",
+        "abilities": {
+            "pound": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 8,
+        "name": "Meowth",
+        "type": "normal",
+        "evolution": "basic",
+        "abilities": {
+            "scratch": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 9,
+        "name": "Psyduck",
+        "type": "water",
+        "evolution": "basic",
+        "abilities": {
+            "confusion": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 10,
+        "name": "Machop",
+        "type": "fighting",
+        "evolution": "basic",
+        "abilities": {
+            "karate_chop": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 11,
+        "name": "Gastly",
+        "type": "ghost",
+        "evolution": "basic",
+        "abilities": {
+            "lick": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 12,
+        "name": "Abra",
+        "type": "psychic",
+        "evolution": "basic",
+        "abilities": {
+            "teleport": {
+                "damage": 0
+            }
+        }
+    },
+    {
+        "id": 13,
+        "name": "Geodude",
+        "type": "rock",
+        "evolution": "basic",
+        "abilities": {
+            "tackle": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 14,
+        "name": "Magnemite",
+        "type": "electric",
+        "evolution": "basic",
+        "abilities": {
+            "spark": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 15,
+        "name": "Oddish",
+        "type": "grass",
+        "evolution": "basic",
+        "abilities": {
+            "absorb": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 16,
+        "name": "Diglett",
+        "type": "ground",
+        "evolution": "basic",
+        "abilities": {
+            "mud_slap": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 17,
+        "name": "Poliwag",
+        "type": "water",
+        "evolution": "basic",
+        "abilities": {
+            "bubble": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 18,
+        "name": "Bellsprout",
+        "type": "grass",
+        "evolution": "basic",
+        "abilities": {
+            "wrap": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 19,
+        "name": "Ponyta",
+        "type": "fire",
+        "evolution": "basic",
+        "abilities": {
+            "ember": {
+                "damage": 10
+            }
+        }
+    },
+    {
+        "id": 20,
+        "name": "Zubat",
+        "type": "flying",
+        "evolution": "basic",
+        "abilities": {
+            "bite": {
+                "damage": 10
+            }
+        }
+    }
+]
