@@ -21,9 +21,6 @@ class pet():
             self.happiness += 10
             print(f" You played with {self.name} and its happiness is now a {self.happiness}")
 
-    def eat(self):
-        number = random.randint(1,10)
-        if number == 2 or number == 2
 
 
 
@@ -39,3 +36,30 @@ randomnumber = 0
 print(f"pet name: {name} pet age: {age} happiness: {happiness} status: {status}")
 
 
+while status == "alive":
+    action = input("Type 'yes' to procede")
+
+    
+    
+    randomnumber = random.randint(1,2)
+    print(randomnumber)
+    if randomnumber == 2:
+        pet1.happiness -= 10
+        print("Your pet lost 10 happiness interact again.")
+         
+    if pet1.happiness <= 0:
+        status = "dead"
+        print("Your pet had died due to depression.")
+        break 
+
+    if randomnumber == 1:
+        print("You played with pet!")
+        pet1.play()
+
+    pet1.get_older()
+
+    if pet1.age >= 100:
+        status = "dead"
+        "Your pet has reached the max age and died."
+
+    print(pet1.name, pet1.age, pet1.happiness, status)
