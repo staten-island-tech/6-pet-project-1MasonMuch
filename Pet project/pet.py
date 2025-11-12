@@ -1,15 +1,24 @@
 
 import random
 
+class owner():
+    def __init__(self, name, money, inventory, xp, lvl):
+        self.name = name
+        self.money = money 
+        self.inventory = inventory
+        self.xp = xp
+        self.lvl = lvl
+
+
+
 class pet():
-    def __init__(self, name, happiness, age, hunger, hp, xp, lvl):
+    def __init__(self, name, happiness, age, hunger, hp, fullness):
         self.name = name
         self.happiness = happiness
         self.age = age
         self.hunger = hunger
         self.hp = hp
-        self.xp = xp
-        self.lvl = lvl
+        self.fullness = fullness
 
 
     def get_older(self):
@@ -33,10 +42,23 @@ class pet():
         else:
             fullness = fullness + 10
             print("Your pet ate and gained 10 fullness")
-            if fullness >= 90 and fullness <= 100:
+            if self.fullness >= 90 and fullness <= 100:
                 self.hunger = "Very Full"
-            if fullness >= 70 and fullness < 90:
+            if self.fullness >= 70 and fullness < 90:
                 self.hunger = "Full"
+            if self.fullness >= 40 and fullness <=69:
+                self.hunger = "Hungry"
+            if self.fullness > 0 and fullness <= 39:
+                self.hunger = "Starving"
+            print(self.hunger)
+
+    def health(self):
+        if self.fullness <= 0:
+            self.hp - 30
+        print(f"Your pet is {self.hunger} and lost 30hp your hp is now {self.hp}.")
+        if self.happiness <= 20:
+            self.hp - 10
+            print(f"Your pet is depressed and lost 10hp your hp is now {self.hp}.")
 
 
 
