@@ -20,6 +20,13 @@ class owner():
             deck.append(i["id"])
         random.shuffle(deck)
         player.append(deck[0])
+        deck.pop(0)
+        player.append(deck[0])
+        deck.pop(0)
+        dealer.append(deck[0])
+        deck.pop(0)
+        dealer.append(deck[0])
+        deck.pop(0)
 
         
 
