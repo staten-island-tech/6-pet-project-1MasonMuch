@@ -15,6 +15,11 @@ class owner():
     def blackjack(self):
         player = [] 
         dealer = []
+        playertotal = []
+        dealertotal = []
+        playerhitstand = ""
+        dealerhitstand = ""
+
         deck = []
         for i in cards:
             deck.append(i["id"])
@@ -29,7 +34,7 @@ class owner():
         deck.pop(0)
 
         
-
+         
 
 
 
