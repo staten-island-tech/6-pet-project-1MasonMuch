@@ -1,5 +1,8 @@
 
 import random
+import json
+cards = open("./movies.json", encoding="utf8")
+data = json.load(cards)
 
 class owner():
     def __init__(self, name, money, inventory, xp, lvl):
@@ -8,6 +11,19 @@ class owner():
         self.inventory = inventory
         self.xp = xp
         self.lvl = lvl
+    
+    def blackjack(self):
+        player = [] 
+        dealer = []
+        deck = []
+        for i in cards:
+            deck.append(i["id"])
+        random.shuffle(deck)
+        player.append(deck[0])
+
+        
+
+
 
 
 
