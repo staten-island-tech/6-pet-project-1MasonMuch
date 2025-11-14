@@ -1,42 +1,5 @@
 
 import random
-import json
-cards = open("./movies.json", encoding="utf8")
-data = json.load(cards)
-
-class owner():
-    def __init__(self, name, money, inventory, xp, lvl):
-        self.name = name
-        self.money = money 
-        self.inventory = inventory
-        self.xp = xp
-        self.lvl = lvl
-    
-    def blackjack(self):
-        player = [] 
-        dealer = []
-        playertotal = []
-        dealertotal = []
-        playerhitstand = ""
-        dealerhitstand = ""
-
-        deck = []
-        for i in cards:
-            deck.append(i["id"])
-        random.shuffle(deck)
-        player.append(deck[0])
-        deck.pop(0)
-        player.append(deck[0])
-        deck.pop(0)
-        dealer.append(deck[0])
-        deck.pop(0)
-        dealer.append(deck[0])
-        deck.pop(0)
-
-        
-         
-
-
 
 
 class pet():
@@ -60,6 +23,7 @@ class pet():
             print("Your pet is too excited")
         else:
             self.happiness += 10
+            self.fullness = self.fullness - 20
             print(f" You played with {self.name} and its happiness is now a {self.happiness}")
 
     def eat(self):
@@ -81,12 +45,26 @@ class pet():
             print(self.hunger)
 
     def health(self):
+        
         if self.fullness <= 0:
             self.hp - 30
         print(f"Your pet is {self.hunger} and lost 30hp your hp is now {self.hp}.")
-        if self.happiness <= 20:
+        if self.happiness <= 50:
             self.hp - 10
             print(f"Your pet is depressed and lost 10hp your hp is now {self.hp}.")
+        if self.fullness >= 90 and fullness <= 100:
+            self.hunger = "Very Full"
+        if self.fullness >= 70 and fullness < 90:
+            self.hunger = "Full"
+        if self.fullness >= 40 and fullness <=69:
+            self.hunger = "Hungry"
+        if self.fullness > 0 and fullness <= 39:
+            self.hunger = "Starving"
+        print(self.hunger)
+        if self.hp <= 0:
+            status = "dead"
+
+            print(f"Your pet is {status}.")
 
 
 
@@ -95,9 +73,17 @@ name = input("Input a name for your pet")
 age = 1
 happiness = 50
 status = "alive"
-pet1 = pet(name, happiness, age)
+hunger = "Full"
+fullness = 80
+hp = 100
+pet1 = pet(name, happiness, age, hunger, hp, fullness)
 action = ""
-randomnumber = 0
 
-
-
+while status == "alive":
+    action = input("Options:eat or play")
+    if action == "Eat" or action == "eat":
+        pet1.eat()
+        pet1.health
+    if action == "Play" or action == "play":
+        pet1.play
+        pet1.health
