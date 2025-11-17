@@ -17,9 +17,7 @@ class pet():
         print(f"{self.name} is now {self.age} years old!")
     
     def play(self):
-        if self.happiness == 100:
-            print("Your pet is too excited")
-        elif self.happiness > 100:
+        if self.happiness >= 100:
             print("Your pet is too excited")
         else:
             self.happiness += 10
@@ -84,6 +82,9 @@ while status == "alive":
     if action == "Eat" or action == "eat":
         pet1.eat()
         pet1.health
+        
     if action == "Play" or action == "play":
         pet1.play
         pet1.health
+
+    print(pet1.__dict__)
