@@ -25,30 +25,31 @@ class pet():
             print(f" You played with {self.name} and its happiness is now a {self.happiness}")
 
     def eat(self):
+        
         number = random.randint(1,10)
         if number == 2 or number == 4 or number == 8:
             self.hp = self.hp - 10
-            print("Your pet got food poisoning and lost and lost 10 hp")
+            print("Your pet got food poisoning and lost 10 hp")
         else:
-            fullness = fullness + 10
+            self.fullness = self.fullness + 10
             print("Your pet ate and gained 10 fullness")
             if self.fullness >= 90 and fullness <= 100:
                 self.hunger = "Very Full"
-            if self.fullness >= 70 and fullness < 90:
+            elif self.fullness >= 70 and fullness < 90:
                 self.hunger = "Full"
-            if self.fullness >= 40 and fullness <=69:
+            elif self.fullness >= 40 and fullness <=69:
                 self.hunger = "Hungry"
-            if self.fullness > 0 and fullness <= 39:
+            elif self.fullness > 0 and fullness <= 39:
                 self.hunger = "Starving"
             print(self.hunger)
-
+            
     def health(self):
         
         if self.fullness <= 0:
-            self.hp - 30
+            self.hp = self.hp - 30
         print(f"Your pet is {self.hunger} and lost 30hp your hp is now {self.hp}.")
         if self.happiness <= 50:
-            self.hp - 10
+            self.hp = self.hp - 10
             print(f"Your pet is depressed and lost 10hp your hp is now {self.hp}.")
         if self.fullness >= 90 and fullness <= 100:
             self.hunger = "Very Full"
@@ -61,9 +62,9 @@ class pet():
         print(self.hunger)
         if self.hp <= 0:
             status = "dead"
-
+        
             print(f"Your pet is {status}.")
-
+        self.get_older()
 
 
 
@@ -79,12 +80,12 @@ action = ""
 
 while status == "alive":
     action = input("Options:eat or play")
-    if action == "Eat" or action == "eat":
+    if action.lower == "eat":
         pet1.eat()
-        pet1.health
+        pet1.health()
         
-    if action == "Play" or action == "play":
-        pet1.play
-        pet1.health
+    elif action.lower == "play":
+        pet1.play()
+        pet1.health()
 
     print(pet1.__dict__)
